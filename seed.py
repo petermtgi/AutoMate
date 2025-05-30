@@ -10,15 +10,15 @@ def seed():
     session = Session()
 
     # Customers
-    alice = Customer(name="Alice Smith", phone="555-1234", email="alice@example.com")
-    bob = Customer(name="Bob Johnson", phone="555-5678", email="bob@example.com")
-    session.add_all([alice, bob])
+    Peter = Customer(name="Peter Mutua", phone="0791236742", email="peter@example.com")
+    Claude = Customer(name="Claude Otieno", phone="0723344380", email="claude@example.com")
+    session.add_all([Peter, Claude])
     session.commit()
 
     # Vehicles
-    v1 = Vehicle(license_plate="ABC123", make="Toyota", model="Camry", year=2015, customer=alice)
-    v2 = Vehicle(license_plate="XYZ789", make="Honda", model="Civic", year=2018, customer=alice)
-    v3 = Vehicle(license_plate="LMN456", make="Ford", model="Focus", year=2012, customer=bob)
+    v1 = Vehicle(license_plate="KDK 421S", make="Toyota", model="Corolla", year=2003, customer=Peter)
+    v2 = Vehicle(license_plate="KDD 001D", make="Honda", model="Fit", year=2009, customer=Peter)
+    v3 = Vehicle(license_plate="KCF 122E", make="Ford", model="Ranger", year=2024, customer=Claude)
     session.add_all([v1, v2, v3])
     session.commit()
 
