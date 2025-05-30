@@ -158,7 +158,7 @@ def main():
             continue
         idx = int(choice) - 1
         if menu[idx][1] is None:
-            print("Goodbye,Peace!")
+            print("Goodbye and thank you for using AutoMate!")
             break
         menu[idx][1](session)
     session.close()
