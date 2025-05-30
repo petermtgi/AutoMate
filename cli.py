@@ -158,7 +158,7 @@ def main():
             continue
         idx = int(choice) - 1
         if menu[idx][1] is None:
-            print("Goodbye!")
+            print("Goodbye,Peace!")
             break
         menu[idx][1](session)
     session.close()
