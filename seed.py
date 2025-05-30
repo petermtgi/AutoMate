@@ -23,10 +23,10 @@ def seed():
     session.commit()
 
     # Service Records
-    s1 = ServiceRecord(description="Oil Change", cost=39.99, date=datetime.date(2024, 1, 10), vehicle=v1)
-    s2 = ServiceRecord(description="Brake Replacement", cost=250.00, date=datetime.date(2024, 2, 15), vehicle=v1)
-    s3 = ServiceRecord(description="Tire Rotation", cost=49.99, date=datetime.date(2024, 3, 5), vehicle=v2)
-    s4 = ServiceRecord(description="Battery Replacement", cost=120.00, date=datetime.date(2024, 4, 20), vehicle=v3)
+    s1 = ServiceRecord(description="Oil Change", cost=5166, date=datetime.date(2024, 1, 10), vehicle=v1)
+    s2 = ServiceRecord(description="Brake Replacement", cost=32312, date=datetime.date(2024, 2, 15), vehicle=v1)
+    s3 = ServiceRecord(description="Tire Rotation", cost=6461, date=datetime.date(2024, 3, 5), vehicle=v2)
+    s4 = ServiceRecord(description="Battery Replacement", cost=15510, date=datetime.date(2024, 4, 20), vehicle=v3)
     session.add_all([s1, s2, s3, s4])
     session.commit()
     session.close()
